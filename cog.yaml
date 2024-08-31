@@ -1,0 +1,17 @@
+build:
+  python_version: "3.8"
+  python_packages:
+    - numpy
+    - onnxruntime
+    # 他の必要なパッケージをここに追加します
+
+predict:
+  command: "python predict.py"
+  inputs:
+    image:
+      type: "image"
+      help: "28x28 grayscale image of a handwritten digit"
+  outputs:
+    prediction:
+      type: "int"
+      help: "Predicted digit"
