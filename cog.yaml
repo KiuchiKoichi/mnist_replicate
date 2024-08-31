@@ -3,3 +3,4 @@ build:
   python_packages:
     - numpy
     - onnxruntime
+predict: "predict.py:Predictor"
