@@ -1,0 +1,13 @@
+schema_version: "0.1"
+name: "mnist-onnx"
+description: "MNIST digit classification using ONNX"
+deterministic: true
+inputs:
+  image:
+    type: image
+    description: "28x28 grayscale image of a handwritten digit"
+    example: "example.png"
+outputs:
+  prediction:
+    type: integer
+    description: "Predicted digit"
