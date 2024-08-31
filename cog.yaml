@@ -4,7 +4,7 @@ build:
     - numpy
     - onnxruntime
 predict:
-  command: "python predict.py"
+  command: python predict.py
   inputs:
     image:
       type: image
