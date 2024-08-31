@@ -3,11 +3,3 @@ build:
   python_packages:
     - numpy
     - onnxruntime
-predict:
-  command: "python3 predict.py"
-  inputs:
-    image:
-      type: image
-  outputs:
-    prediction:
-      type: int
