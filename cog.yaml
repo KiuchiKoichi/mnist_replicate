@@ -3,4 +3,6 @@ build:
   python_packages:
     - numpy
     - onnxruntime
+    - cog
+    - pillow
 predict: "predict.py:Predictor"
